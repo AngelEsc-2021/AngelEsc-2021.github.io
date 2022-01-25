@@ -18,7 +18,7 @@ a{
     margin-left: 160px;
 }
 ul.menu{
-    margin-left: 500px;
+    margin-left: 800px;
     display: flex;
     align-items: flex-start;
     flex-direction: row;
@@ -49,4 +49,12 @@ a.menu_inicio:hover{
     background-size: cover;
     display: grid;
     place-items: center;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+.logo_portada{
+    max-width: 100%;
+    width: auto;
+    height: auto;
 }
