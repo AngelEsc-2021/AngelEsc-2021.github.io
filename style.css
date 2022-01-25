@@ -40,14 +40,14 @@ a.menu_inicio:hover{
     background-color: #265FC9;
     padding: 15px;
 }
-.img_portada{
-    background-image: url(/img/Diseño\ sin\ título.jpg);
-    width: 100%;
-    height: 636px;
-    background-size: cover;
-    position: relative;
-}
 
+.img_portada{
+    background-image: linear-gradient(rgba(5, 7, 12, 0.459), rgba(238, 238, 238, 0.459)),
+     url(/img/trabajos_tierra.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
 .logo_portada{
     display: block;
     margin: auto;
