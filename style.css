@@ -59,6 +59,12 @@ a.menu_inicio:hover{
     margin: 0;
 
 }
+hr {
+    color: white;
+    background-color: white;
+    padding: 1px;
+    margin: 0;
+}
 .slider{
     background-color: #2547a0;
     width: 100%;
@@ -73,15 +79,15 @@ a.menu_inicio:hover{
     animation-direction: alternate-reverse;
     animation-timing-function: ease-in;
 }
-
 .slider li{
     width: 100%;
     list-style: none;
     margin-left: 200px;
 }
 .slider img{
+    
     float: left;
-    width: 1100px;
+    width: 900px;
     height: auto;
 }
 @keyframes cambio{
@@ -95,8 +101,61 @@ a.menu_inicio:hover{
     100% {margin-left: -300%;}
 }
 .slider h1{
+    margin-top: 1px;
     color: white;
     float: right;
     margin-right: 250px;
     font-size: 70px;
+}
+.servicios{
+    background-color: black;
+    width: 100%;
+    max-width: 2000px;
+    height: 530px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+.servicios .card{
+    width: 320px;
+    height: 430px;
+    border-style: 10px;
+    box-shadow: 0 2px 2px rgb(0, 0, 0);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    margin-bottom: 10px;
+    background-color: rgb(255, 255, 255);
+}
+.servicios .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px #fcfcfc;
+}
+.servicios .card img{
+    width: 330px;
+    height: 220px;
+}
+.servicios .card h4{
+    font-weight: 600;
+}
+.servicios .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+.servicios .card a{
+    font-weight: 500;
+    text-decoration: none;
+    color: blue;
+}
+.subtitle{
+    color: white;
+    font-size: 25px;
+    background-color: black;
+    margin-top: 0;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
