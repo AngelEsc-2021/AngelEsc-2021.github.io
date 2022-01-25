@@ -47,9 +47,6 @@ a.menu_inicio:hover{
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-}
-.logo_portada{
-    display: block;
-    margin: auto;
-    z-index: 3;
+    display: grid;
+    place-items: center;
 }
