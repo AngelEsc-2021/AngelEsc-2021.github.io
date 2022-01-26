@@ -39,10 +39,10 @@ hr {
     margin: 0;
 }
 .servicios{
-    background-color: black;
+    background-color: #265FC9;
     width: 100%;
     max-width: 2000px;
-    height:auto;
+    height:100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -51,14 +51,15 @@ hr {
 .servicios .card{
     width: 320px;
     height: 430px;
-    border-style: 10px;
+    border-style: 20px;
     box-shadow: 0 2px 2px rgb(0, 0, 0);
     overflow: hidden;
     margin: 20px;
     text-align: center;
     transition: all 0.25s;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     background-color: rgb(255, 255, 255);
+    border-radius: 25px;
 }
 .servicios .card:hover{
     transform: translateY(-15px);
@@ -81,12 +82,12 @@ hr {
     text-decoration: none;
     color: blue;
 }
-.subtitle{
+.subtitle h1{
     color: white;
-    font-size: 25px;
-    background-color: black;
+    font-size: 60px;
+    background-color: #265FC9;
     margin-top: 0;
-    padding: 10px;
+    padding: 20px;
     font-family: 'Roboto', sans-serif;
     text-align: center;
 }
