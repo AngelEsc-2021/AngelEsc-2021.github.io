@@ -21,15 +21,49 @@ a{
     margin-top: 15px;
     margin: 0;
 }
-.carousel-inner{
+
+/* slider portada */
+.slider{
     width: 100%;
+    margin: auto;
     height: auto;
-    min-height: 300px;
+    overflow: hidden;
     max-height: 650px;
 }
-.carousel-inner img{
-    margin-top: 25px;
+
+.slider ul{
+    padding: 0px;
+    display: flex;
+    width: 400%;
+    animation: slider 20s infinite alternate; 
+    animation-timing-function: linear;
 }
+
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+.slider li img{
+    margin-top: 20px;
+    width: 100%;
+}
+
+@keyframes slider{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+/* boton whatsapp menu */
 .whatsapp {
     width: 45px;
     height: auto;
@@ -40,6 +74,8 @@ hr {
     padding: 1px;
     margin: 0;
 }
+
+/* card de servicio */
 .servicios{
     background-color: #265FC9;
     width: 100%;
@@ -92,32 +128,4 @@ hr {
     padding: 20px;
     font-family: 'Roboto', sans-serif;
     text-align: center;
-}
-.parent{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
-}
-.child{
-    width: 20%;
-    margin-left: 10px;
-    margin-right: 10px;
-    display: none;
-
-}
-.child img{
-    height: 200px;
-    width: 100%;
-}
-
-#leftarrow, #rigtharrow{
-    margin-left: 12px;
-    width: 3%;
-    display: inline-block; 
-}
-#leftarrow button, #rightarrow button{
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 15px;
 }
