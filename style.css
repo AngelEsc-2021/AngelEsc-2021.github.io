@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 /*barra de navegacion*/
 
 nav{
@@ -135,28 +136,32 @@ section{
     color: #0171c2;
     text-decoration: underline;
     text-decoration-color: gray;
+    font-size: 45px;
 }
 .nosotros{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin-top: 100px;
     padding: 10px;
     width: 100%;
-    height: 375px;
+    height: auto;
+    margin-bottom: 80px;
 }
  .card-servicio{
     transition: 0.3s;
-    width: 20%;
+    width: clamp(300px, 50%, 100px);
     height: 60%;
     text-align: center;
     margin: 50px;
     border-radius: 5px;
     border: gray 1px solid;
+    margin-bottom: 30px;
+    padding: 25px;
 }
  .card-servicio img{
     width: 80px;
     height: 80px;
-    margin-top: 10%;
     margin-bottom: 20px;
 }
 
@@ -164,15 +169,55 @@ section{
     color: gray;
 }
 
+/*Seccion acerca de*/
+.acerca-de-nosotros{
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+}
+.acerca-de-nosotros img{
+    margin-top: 200px;
+    width: 40%;
+    margin-bottom: 300px;
+    margin-left: 150px;
+    float: left;
+}
+.acerca-de {
+    position: relative;
+    margin-top: 90px;
+    color: white;
+    background-color: #0171c2;
+    border-radius: 10px;
+    width: clamp(300px, 50%, 100px);
+    height: 50%;
+    text-align: left;
+    padding: 15px;
+    margin-left: 200PX;
+}
+.acerca-de h4{
+    color: black;
+    background-color: white;
+    width: 200px;
+    padding: 2px;
+    border-radius: 10px;
+    text-align: center;
+}
+.acerca-de h4:hover{
+    color: #0171c2;
+    cursor: pointer;
+}
+
 /*Seccion de Servicios*/
 .txt2{
     text-align: center;
-    margin-top: 70px;
+    margin-top: 80px;
     color: #0171c2;
     text-decoration: underline;
     text-decoration-color: gray;
     background-color: rgb(246 248 247);
-    padding: 30px;
+    padding: 20px;
+    font-size: 45px;
 }
 #servicios-section{
     display: flex;
@@ -180,22 +225,23 @@ section{
     justify-content: center;
     background-color: rgb(246 248 247);
     width: 100%;
+    height: auto;
 }
 
 .services img{
     width: 100px;
     height: 100px;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .services{
     transition: 0.3s;
-    width: 20%;
-    height: 30%;
+    width: clamp(300px, 50%, 100px);
     text-align: center;
     margin: 50px;
     border-radius: 5px;
     border: gray 1px solid;
+    padding: 10px;
 }
 
 .services h3{
@@ -204,28 +250,30 @@ section{
 
 .services1{
     transition: 0.3s;
-    width: 20%;
-    height: 30%;
+    width: clamp(300px, 50%, 100px);
     text-align: center;
     margin: 50px;
     background-color: #0171c2;
     color: white;
-    border-radius: 20px;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 .services1 img{
     width: 100px;
     height: 100px;
-    margin-top: 30px;
+    margin-top: 10px;
     text-decoration: underline;
 }
 
 .services:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 20px 50px 0 rgba(0,0,0,0.4);
+    cursor: pointer;
 }
 
 .services1:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 20px 50px 0 rgba(0,0,0,0.4);
+    cursor: pointer;
 }
 
 hr{
@@ -244,4 +292,55 @@ hr{
     background-color: white;
     border: 0 none;
     margin-bottom: 8px;
+}
+
+/*Seccion de contacto*/
+.txt3{
+    text-align: center;
+    margin-top: 70px;
+    color: #0171c2;
+    text-decoration: underline;
+    text-decoration-color: gray;
+    font-size: 45px;
+    padding: 20px;
+    font-size: 45px;
+}
+.contact-section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 80px;
+}
+ .card-contact{
+    transition: 0.3s;
+    width: clamp(300px, 50%, 23%);
+    height: 60%;
+    text-align: center;
+    margin: 50px;
+    border-radius: 5px;
+    border: gray 1px solid;
+    margin-bottom: 30px;
+    padding: 25px;
+    color: black;
+}
+ .card-contact img{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+.card-contact:hover{
+    box-shadow: 0 20px 50px 0 rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+#link{
+    text-decoration: none;
+    color: black;
+    list-style: none;
+}
+.ptxt{
+    
 }
