@@ -14,13 +14,13 @@ nav{
     background: white;
     height: 90px;
     width: 100%;
+    position: fixed;
 }
 .enlace{
     position: absolute;
     padding: 20px 50px;
 }
 .logo{
-    margin-left: 80px;
     height: 60px;
 }
 nav ul{
@@ -114,7 +114,7 @@ section{
   object-fit: cover;
   object-position: center center;
   width: 100%;
-  
+  margin-top: 80px;
 }
 
 /*Seccion de Nosotros*/
@@ -135,6 +135,7 @@ section{
     width: 100%;
     height: auto;
     margin-bottom: 80px;
+    align-items: center;
 }
  .card-servicio{
     transition: 0.3s;
@@ -157,6 +158,38 @@ section{
     color: gray;
 }
 
+.comprometidos-con{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+.img-slider{
+    transition: 0.3s;
+    width: clamp(500px, 50%, 100px);
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+}
+.img-slider img{
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.descripcion-slider{
+    transition: 0.3s;
+    width: clamp(300px, 80%, 100px);
+    text-align: left;
+    margin: 10px;
+    border-radius: 5px;
+    border: gray 1px solid;
+    padding: 10px;
+}
 /*Seccion acerca de*/
 .acerca-de-nosotros{
     width: auto;
@@ -207,6 +240,9 @@ section{
     padding: 10px;
     font-size: 45px;
 }
+.link-galeria{
+    color: white;
+}
 #servicios-section{
     display: flex;
     flex-wrap: wrap;
@@ -214,6 +250,7 @@ section{
     background-color: rgb(246 248 247);
     width: 100%;
     height: auto;
+    align-items: center;
 }
 
 .services img{
@@ -281,6 +318,16 @@ hr{
     border: 0 none;
     margin-bottom: 8px;
 }
+/*Seccion de galeria*/
+
+.txt4{
+    text-align: center;
+    color: #0171c2;
+    text-decoration: underline;
+    text-decoration-color: gray;
+    padding: 20px;
+    font-size: 45px;
+}
 
 /*Seccion de contacto*/
 .txt3{
@@ -293,53 +340,112 @@ hr{
     font-size: 45px;
     background-color: rgb(246 248 247);
 }
-.contact-section{
+#contacto{
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    padding: 10px;
+    justify-content: center;
+    background-color: rgb(246 248 247);
     width: 100%;
     height: auto;
-    margin-bottom: 80px;
-    background-color: rgb(246 248 247);
+    align-items: center;
 }
- .card-contact{
+
+.info-contacto{
+    margin-top: 40px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    margin: 50px;
+}
+.form1{
+    margin-top: 40px;
+    text-align: left;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    margin: 50px;
+}
+#name{
+    width: 300px;
+    min-width: 50px;
+    border-radius: 2px;
+    border: gray solid 1px;
+    padding: 3px;
+}
+textarea {
+    margin: 0;
+    width: 100%;
+    height: 100px;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    border-radius: 2px;
+    border: gray solid 1px;
+    padding: 8px;
+  }
+#submit{
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-size: 14px;
+    width: 100%;
+    height: 25px;
+    background-color: #0171c2;
+    color: white;
+    border: gray solid 1px;
+}
+#submit:hover{
+    background-color: green;
+    color: white;
+    border-radius: 4px;
+}
+.submit-button{
+    width: 400px;
+    text-align: center;
+}
+.a-contact{
+    color: #0171c2;
+}
+.a-contact:hover{
+    background-color: white;
+    color: black;
+    padding: 2px;
+    border: gray 1px solid;
+}
+/*Normas de seguridad*/
+.txt4{
+    text-align: center;
+    margin-top: 70px;
+    color: #0171c2;
+    text-decoration: underline;
+    text-decoration-color: gray;
+    padding: 20px;
+    font-size: 45px;
+    background-color:white;
+}
+#normas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+.normas-bioseguridad{
     transition: 0.3s;
-    width: clamp(300px, 50%, 23%);
-    height: 60%;
+    width: clamp(300px, 50%, 100px);
     text-align: center;
     margin: 50px;
     border-radius: 5px;
-    border: gray 1px solid;
-    margin-bottom: 30px;
-    padding: 25px;
-    color: black;
+    border: rgba(215, 215, 215, 0.911) 0.1px solid;
+    padding: 10px;
 }
- .card-contact img{
-    width: 80px;
-    height: 80px;
-    margin-bottom: 20px;
-}
-.card-contact:hover{
-    box-shadow: 0 20px 50px 0 rgba(0,0,0,0.4);
-    cursor: pointer;
-}
-#link{
-    text-decoration: none;
-    color: black;
-    list-style: none;
-}
-
 /*footer*/
-.pie_pagina {
-    width: auto;
-    background-color: #0171c2;
-    border-left: 25px;
+.pie_pagina{
+    text-align: left;
 }
 .footer img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    width: 10%;
+    width: 150px;
 }

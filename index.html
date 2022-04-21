@@ -63,25 +63,21 @@
             </div>
         </div>
     </section>
+    
+    <section class="comprometidos-con">
+        <div class="img-slider">
+            <img src="/img/1.jpeg">
+        </div>
 
-<!--Aeccion acerca de nosotros-->
-    <section class="acerca-de-nosotros">
-        <img src="/img/logo.png" />
-        <div class="acerca-de">
-             <h2>Acerca de Nosotros</h2>
-             <br>
-             <br>
-             <p>Lorem ipsum dolor, sit amet consectetur 
-                adipisicing elit. Quasi distinctio neque
-                eius nihil aliquam, maiores quod corporis
-                fugit incidunt ipsam facilis reprehenderit.
-                Ab aut officiis facilis error quis obcaecati
-                 molestiae!</p>
-                 <br>
-            <h4>Ver Nuestros Proyectos</h4>
+        <div class="descripcion-slider">
+            <h2>Quienes Somos</h2>
+            <br>
+            <p>Nuestra empresa esta conformada por un equipo profesional joven y dinamico con un 
+                objetivo comun: Satisfacer las demandas de nuestros clientes.
+
+            </p>
         </div>
     </section>
-        
 
     <!--Seccion de Servicios-->
     <h2 class="txt2">Servicios</h2>
@@ -89,99 +85,106 @@
 
         <!--Card de construccion-->
         <div class="services">
+            <a href="" class="link-galeria">
             <img src="/img/construccion.png" />
             <hr>
                 <div class="texto-service">
                     <h3>Construccion</h3>
-                </div>
+                </div>       
+            </a>
         </div>
 
         <!--Card de renovacion-->
         <div class="services1">
+            <a href="" class="link-galeria">
             <img src="/img/renovacion.png" />
             <hr class="hr1">
                 <div class="texto-service">
                     <h3>Renovaciones</h3>
                 </div>
+            </a>
         </div>
 
         <!--Card de Plomeria-->
         <div class="services">
+            <a href="" class="link-galeria">
             <img src="/img/plomeria.png" />
             <hr>
                 <div class="texto-service">
                     <h3>Plomeria</h3>
                 </div>
+            </a>
         </div>
 
         <!--Card de Reparacion-->
         <div class="services1">
+            <a href="" class="link-galeria">
             <img src="/img/reparaciones.png" />
             <hr class="hr1">
                 <div class="texto-service">
                     <h3>Reparaciones</h3>
                 </div>
+            </a>
         </div>
-
         <!--Card de Arquitectura-->
         <div class="services">
+            <a href="" class="link-galeria">
             <img src="/img/arquitectura.png" />
             <hr>
                 <div class="texto-service">
                     <h3>Arquitectura</h3>
                 </div>
+            </a>
         </div>
 
         <!--Card de Electricidad-->
         <div class="services1">
+            <a href="" class="link-galeria">
             <img src="/img/electricidad.png" />
             <hr class="hr1">
                 <div class="texto-service">
                     <h3>Electricidad</h3>
                 </div>
+            </a>
         </div>
 
-
     </section>
+
+
+    <!--Seccion de galeria-->
+    <h2 class="txt4">Galería</h2>
+    
 
     <!--Seccion de contacto-->
     <h2 class="txt3">Contacta con Nosotros</h2>
-    <section class="contact-section">
+    <div id="contacto">
 
-        <!--card de whatsapp-->
-        <a class="card-contact" href="whatsapp://send?text=Hola,necesito mas informacion &phone=+50241776534&abid=+50241776534">
-            <img src="/img/whatsapp.png" />
-            <div class="texto-contact">
-                <h3>Escribe por nuestro Whatsapp</h3>
-                <p>+502 4177-6534</p>
-            </div>
-        </a>
+        <div class="info-contacto">
+            <div class="form">
+            <ul>
+                <li><h3>Teléfono:</h3><h4></h4> <a class="a-contact" href="tel:+50241776534"> &nbsp;<strong>+502 41776534</strong> </a></h3></li><br><br>
+                <li><h3>E-mail:</h3> <h4><a class="a-contact" href="mailto: mundonuevo@solucionesmundonuevo.com">informacion@solucionesmundonuevo.com </a></h4></li><br><br>
+                <li><h3>Whatsapp:</h3> <h4></h4> <a class="a-contact" href="https://api.whatsapp.com/send?phone=+50241776534&text=Hola, Necesito mas informacion!"><strong> Envianos un mensaje por whatsapp </strong></a></li><br><br>
+            </ul>
+             </div>
+        </div>
 
-        <!--Card de correo-->
-        <a class="card-contact" href="mailto:angelvelasquez207@gmail.com">
-            <img src="/img/email.png" />
-            <div class="texto-contact">
-                <h3> Contacta con nuestros asesores</h3>
-                <p>+502 4177-6534</p>
-            </div>
-        </a>
-
-        <!--Card de telefono-->
-        <a class="card-contact" href="tel:+50241776534">
-            <img src="/img/telefono.png" />
-            <div class="texto-contact">
-                <h3> Contacta con nuestros asesores</h3>
-                <p>+502 4177-6534</p>
-            </div>
-        </a>
-    </section>
+    <form>
+        <div class="form1">
+            <h5>Formulario De Contacto</h5><br>
+            <input type="text" name="name" id="name" placeholder="Ingrese su Nombre" required><br><br>
+            <input type="email" name="email" id="name" placeholder="Ingrese un Correo Electronico" required><br> <br>
+            <textarea name="comment" " placeholder="Ingrese su comentario o duda en este espacio" required></textarea>
+            <br> <br> <br>
+            <button type="submit" id="submit" class="submit-button">Enviar</button>
+        </div>
+     </form>
+    </div>
 
     <!--footer-->
     <footer class="pie_pagina">
         <div class="footer">
-            <br>
             <img src="/img/logo_sinletras.jpg">
-            <h2></h2>
         </div>
     </footer>
 </body>
