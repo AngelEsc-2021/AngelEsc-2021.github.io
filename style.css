@@ -118,7 +118,7 @@ section{
 }
 
 /*Seccion de Nosotros*/
-.txt{
+#txt{
     text-align: center;
     margin-top: 70px;
     color: #0171c2;
@@ -126,7 +126,7 @@ section{
     text-decoration-color: gray;
     font-size: 45px;
 }
-.nosotros{
+#nosotros{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -170,7 +170,7 @@ section{
 
 .img-slider{
     transition: 0.3s;
-    width: clamp(500px, 50%, 100px);
+    width: clamp(700px, 50%, 100px);
     text-align: center;
     border-radius: 5px;
     padding: 5px;
@@ -444,8 +444,19 @@ textarea {
 }
 /*footer*/
 .pie_pagina{
-    text-align: left;
+    margin-top: 10px;
+    background-color: black;
+    text-align: center;
+}
+.footer {
+    height: 120px;
+}
+.footer h3{
+    color: white;
 }
 .footer img{
-    width: 150px;
+    border-radius: 28px;
+    width: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
