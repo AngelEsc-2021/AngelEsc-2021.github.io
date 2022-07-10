@@ -9,6 +9,7 @@ nav{
     width: 100%;
     position: fixed;
     z-index: 2;
+    background-image: linear-gradient(#00000009, #00000009); 
 }
 .enlace{
     position: fixed;
@@ -99,12 +100,14 @@ section{
 }
 
 /*Portada*/
+#portada-{
+    background-image: linear-gradient(#00000009, #000000); 
+}
 .portada-1{
     width: 100vw;
     height: 100vh;
-    object-fit: cover;
+    object-fit: cover; /*Cambiar a content en media de telefono*/
     position: fixed;
-    filter: brightness(40%);
     z-index: -1;
 }
 .header pre{
@@ -115,11 +118,35 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
+    font-size: 60px;
     font-family: 'Brush Script MT', cursive;
 }
 
 /*Bienvenida*/
 #bienvenida{
-    background-color: white;
+    background-image: linear-gradient( #000000, #000000); 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.bienvenida-1  p{
+    margin-top: 100px;
+    width: 600px;
+    height: auto;
+    text-align: center;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    padding: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    .bienvenida-1  p {
+      width: calc(100% - 80px);
+      text-align: center;
+      margin: auto;
+      font-size: ;
+    }
+  }
