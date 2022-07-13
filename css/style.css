@@ -3,13 +3,12 @@
     margin: 0;
 }
 /*barra de navegacion*/
-
 nav{
     height: 90px;
     width: 100%;
     position: fixed;
     z-index: 2;
-    background-image: linear-gradient(#00000009, #00000009); 
+    background-color: rgba(0, 0, 0, 0.515)
 }
 .enlace{
     position: fixed;
@@ -122,6 +121,12 @@ section{
     font-family: 'Brush Script MT', cursive;
 }
 
+@media screen and (max-width: 480px) {
+    .header pre {
+     font-size: 50px;
+    }
+  }
+
 /*Bienvenida*/
 #bienvenida{
     background-image: linear-gradient( #000000, #000000); 
@@ -137,16 +142,107 @@ section{
     height: auto;
     text-align: center;
     font-size: large;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Quicksand', sans-serif;
     font-size: 20px;
     padding: 20px;
+    margin-bottom: 100px;
 }
 
 @media screen and (max-width: 480px) {
     .bienvenida-1  p {
-      width: calc(100% - 80px);
+      width: 80%;
       text-align: center;
       margin: auto;
-      font-size: ;
+      font-size: 18px;
     }
+  }
+
+  /*Presentacion-1*/
+  #presentacion-1{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-1{
+    height: max-content;
+    width: 30%;
+    margin-bottom: 50px;
+}
+.container-1 h1, p{
+    text-align: justify;
+}
+
+a.button-c1::before{
+    content: '';
+    border: solid rgb(135, 0, 35) ;
+    border-radius: 50% 50% 50% 50%;
+    padding: 20px 30px;
+    top: 23px;
+    position: relative;
+}
+a.button-c1:visited, a.button-c1:active{
+    color: white;
+}
+a.button-c1::after{
+    content: 'Descubre mas ⟶';
+    display: block;
+    position: absolute;
+    z-index: 8;
+    left: 170px;
+    background-color: #000000;
+    padding: 3px;
+    font-size: 18px;
+}
+a.button-c1:hover{
+    color: rgb(135, 0, 35);
+    cursor: pointer;
+}
+.container-2{
+    width: 55%;
+    height: 100%;
+    margin-bottom: 50px;
+}
+.container-2 video{
+    width: 100%;
+}
+ 
+  @media screen and (max-width: 480px) {
+    #presentacion-1{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+      .container-1{
+        height: max-content;
+        width: 90%;
+    }
+    .container-2{
+        width: 85%;
+        height: 100%;
+        margin-top: 50px;
+    }
+    .container-2 video{
+        width: 100%;
+    }
+    .button-c1 {
+        display: block;
+        margin-right: 70px;
+        color: white;
+    }
+    a.button-c1:visited, a.button-c1:active{
+        color: white;
+    }
+}
+
+  /*Presentacion 2*/
+  #presentacion-2{
+    width: 100%;
+    height: 100%;
   }
